@@ -1,5 +1,5 @@
 // lib/prisma.ts
-import { PrismaClient } from '../generated/prisma/client' // adjust path if needed
+import { PrismaClient } from '../generated/prisma/client'
 import { PrismaNeon } from '@prisma/adapter-neon'
 
 const adapter = new PrismaNeon({
