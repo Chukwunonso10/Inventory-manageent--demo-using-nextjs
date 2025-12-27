@@ -1,5 +1,6 @@
 import { SignIn, SignUp,  } from "@stackframe/stack";
 import Link from "next/link";
+import { redirect } from "next/navigation"
 
 
 export default function SignInPage() {
@@ -7,6 +8,7 @@ export default function SignInPage() {
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
             <div className="max-w-md w-full space-y-8" >
                 <SignIn />
+                redirect("/dashboard")
                 <Link href="/">Go back home</Link>
             </div>
         </div>
