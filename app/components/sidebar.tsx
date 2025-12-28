@@ -36,7 +36,7 @@ export default function Sidebar({path="/dashboard"}: {path: string}){
             
             <div className="absolute left-0 bottom-0 border-t px-2  ">
                 <div className="flex items-center justify-center">
-                    <UserButton />
+                    <UserButton showUserInfo={true}/>
                 </div>
             </div>
             

@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "Product" (
     "id" TEXT NOT NULL,
-    "userId" TEXT NOT NULL,
+    "userId" TEXT,
     "name" TEXT NOT NULL,
     "sku" TEXT,
     "price" DECIMAL(12,2) NOT NULL,
@@ -12,9 +12,6 @@ CREATE TABLE "Product" (
 
     CONSTRAINT "Product_pkey" PRIMARY KEY ("id")
 );
-
--- CreateIndex
-CREATE UNIQUE INDEX "Product_sku_key" ON "Product"("sku");
 
 -- CreateIndex
 CREATE INDEX "Product_userId_name_idx" ON "Product"("userId", "name");

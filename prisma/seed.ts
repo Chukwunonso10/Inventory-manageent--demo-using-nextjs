@@ -7,7 +7,7 @@ async function seed() {
 
     // Seed 25 products
     await prisma.product.createMany( {
-      data: Array.from({ length: 25 }).map((_, i) => ({
+      data: Array.from({ length: 250 }).map((_, i) => ({
         userId: demoUser,
         name: `product ${i + 1}`,
         price: Number((Math.random() * 90 + 10).toFixed(2)), // Decimal must be number
@@ -17,7 +17,7 @@ async function seed() {
     });
 
     console.log("✅ Seed data created successfully");
-    console.log(`✅ Created 25 products for userId: ${demoUser}`);
+    console.log(`✅ Created 250 products for userId: ${demoUser}`);
   } catch (error) {
     console.error("❌ Seeding failed:", error);
     process.exit(1);

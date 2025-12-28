@@ -66,7 +66,7 @@ export default async function Dashboard() {
     const totalValue = allProducts.reduce((sum, product) => sum + Number(product.price) * Number(product.quantity), 0)
     console.log(allProducts)
     return (
-        <div className="min-h-screen bg-gray-50 w-ful">
+        <div className="min-h-screen bg-gray-50 w-full">
             <Sidebar path="/dashboard" />
             <main className="ml-64 p-8">
                 {/* header goes here */}
